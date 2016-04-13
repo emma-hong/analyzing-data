@@ -1,0 +1,29 @@
+<html>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type ="text/javascript">
+	google.charts.load('current', {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var fatal = google.visualization.arrayToDataTable([
+      ['Type of Gun', 'Acts of Violence'],
+      ['Handgun (Pistol/Revolver)', 598], ['Long Gun (Rifle/Shotgun)', 147],
+      ['Machine Gun', 51]]);
+
+    var nonfatal = google.visualization.arrayToDataTable([
+      ['Type of Gun', 'Acts of Violence'],
+      ['Handgun (Pistol/Revolver)', 1652], ['Long Gun (Rifle/Shotgun)', 299],
+      ['Machine Gun', 143]]);
+
+    var options = { pieSliceText: 'none' };
+
+    var chartDiff = new google.visualization.PieChart(document.getElementById('piechart_diff'));
+
+    var diffData = chartDiff.computeDiff(fatal, nonfatal);
+    chartDiff.draw(diffData, options);
+  }
+</script>
+
+<body>
+<div id="piechart_diff" style="width: 400px; height: 300px;"></div>
+</body>
+</html>

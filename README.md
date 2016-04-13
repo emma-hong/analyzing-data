@@ -18,6 +18,11 @@ domestic_violence.html: html file for creating a bar chart showing victims of do
 
 domestic_violence.py: code for getting the data on gun violence cases marked as domestic violence, then from those, collecting data on the gender of victims and their ages
 
+![Breakdown of incidents of gun-violence by hour](https://github.com/emma-hong/analyzing-data/blob/master/when_line.png)
+
 suicide-pie.py: code for getting all incidents of suicides by gun and the breakdown by gender and age
 
 suicide-py.html: html file for pie graph representation of the brekadown of suicides by gun by gender and age and a diff pie graph contrasting male and female suicides
+
+![Breakdown of suicides by age and gender](https://github.com/emma-hong/analyzing-data/blob/master/suicide-pi.png)
+

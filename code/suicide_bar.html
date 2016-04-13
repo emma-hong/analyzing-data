@@ -1,0 +1,36 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="chart_div"></div>
+<script type="text/javascript">
+google.charts.load('current', {
+  packages: ['corechart', 'bar']
+});
+google.charts.setOnLoadCallback(drawBasic);
+
+function drawBasic() {
+
+  var data = new google.visualization.DataTable();
+   data.addColumn('string', 'Gender');
+   data.addColumn('number', 'Suicides');
+ 
+
+  data.addRows([
+    ['Males', 27],
+    ['Females', 36],
+  ]);
+
+  var options = {
+    title: 'Gun-related suicides by gender',
+    hAxis: {
+      title: 'Gender'
+    },
+    vAxis: {
+      title: 'Number of suicides'
+    }
+  };
+
+  var chart = new google.visualization.ColumnChart(
+    document.getElementById('chart_div'));
+
+  chart.draw(data, options);
+}
+</script>

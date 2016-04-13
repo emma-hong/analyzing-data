@@ -1,6 +1,6 @@
 # Analyzing Data: NETS213 Homework 9 
 
-dedupe-data-code.gz: contains de-duplicated data and code to dedupe the original data
+<b>dedupe-data-code.gz</b>: contains de-duplicated data and code to dedupe the original data
 
 ### Replicating Charts 
 

@@ -35,3 +35,5 @@ I feel the data represented here is in line with my expectations. Suicide occurs
 
 ![Suicides by gender](https://github.com/emma-hong/analyzing-data/blob/master/suicide-bar.png)
 While the number of gun-related suicides here don't have that 2:1 ratio between female and male, it is noteworthy that there are significantly more gun-related suicides among females than males since males own more firearms. Similarly, suicides via other methods are more common (i.e. overdoses), and therefore this graph should not be taken be an indication that this sample data doesn't accurately represent that of the population.
+
+*As a side note, we'd like to bring to light that depression plauges those around us everyday and we believe that being able to visualize data like this (the whole point of this assignment) will help increase awareness and encourage people to reach out to those around them. Remind them that you love your friends and family, and even random strangers around you. :) 

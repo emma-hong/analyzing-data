@@ -1,0 +1,55 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {
+    packages: ['corechart']
+  });
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var maleData = google.visualization.arrayToDataTable([
+      ['Age', '# Victims'],
+      ['Under 18', 3],
+      ['18 - 24', 3],
+      ['25 - 34', 1],
+      ['35 - 44', 8],
+      ['Over 45', 4]
+    ]);
+
+
+    var femaleData = google.visualization.arrayToDataTable([
+      ['Age', '# Victims'],
+      ['Under 18', 5],
+      ['18 - 24', 5],
+      ['25 - 34', 12],
+      ['35 - 44', 4],
+      ['Over 45', 24]]);
+
+    var maleOptions = {'title':'Male suicides by age',
+      pieSliceText: 'none',
+      is3D: true
+    };
+    var femaleOptions = {'title':'Female suicides by age',
+      pieSliceText: 'none',
+      is3D: true
+    };
+    var diffOptions = {'title':'Comparison of suicides by age and gender',
+      pieSliceText: 'none',
+      is3D: true
+    };
+
+    var chartBefore = new google.visualization.PieChart(document.getElementById('piechart_before'));
+    var chartAfter = new google.visualization.PieChart(document.getElementById('piechart_after'));
+    var chartDiff = new google.visualization.PieChart(document.getElementById('piechart_diff'));
+
+    chartBefore.draw(maleData, maleOptions);
+    chartAfter.draw(femaleData, femaleOptions);
+
+    var diffData = chartDiff.computeDiff(maleData, femaleData);
+    chartDiff.draw(diffData, diffOptions);
+  }
+
+</script>
+<span id='piechart_before' style='width: 450px; display: inline-block'></span>
+<span id='piechart_after' style='width: 450px; display: inline-block'></span>
+<br>
+<span id='piechart_diff' style='width: 450px; position: absolute; left: 250px'></span>

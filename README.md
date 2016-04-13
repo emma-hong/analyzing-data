@@ -15,7 +15,7 @@ Contributors: Molly Wang and Emma Hong
 
 <b>when_graph.html</b>: html file for reproducing line graph of time of day to gun-violence incidents (divided up by fatal/non-fatal)
 
-![Breakdown of incidents of gun-violence by hour](https://github.com/emma-hong/analyzing-data/blob/master/when_line.png)
+![Breakdown of incidents of gun-violence by hour](https://github.com/emma-hong/analyzing-data/blob/master/figures/when_line.png)
 
 ### Creating New Charts 
 
@@ -29,5 +29,5 @@ Contributors: Molly Wang and Emma Hong
 
 <b>suicide-py.html</b>: html file for pie graph representation of the brekadown of suicides by gun by gender and age and a diff pie graph contrasting male and female suicides
 
-![Breakdown of suicides by age and gender](https://github.com/emma-hong/analyzing-data/blob/master/suicide-pi.png)
+![Breakdown of suicides by age and gender](https://github.com/emma-hong/analyzing-data/blob/master/figures/suicide-pi.png)
 
